@@ -92,6 +92,13 @@ footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
 footer b{color:#fff;font-family:"Playfair Display",Georgia,serif}
 .fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3);text-decoration:none;z-index:30}
 .fab svg{width:30px;height:30px;fill:#fff}
+.car{position:relative}
+.track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;scrollbar-width:thin}
+.track .q{flex:0 0 min(360px,85%);scroll-snap-align:start}
+.track .q:hover{transform:none}
+.ctrl{display:flex;gap:10px;justify-content:flex-end;margin-top:8px}
+.ctrl button{width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:var(--card);color:var(--gold);font-size:1.2rem;cursor:pointer}
+.ctrl button:hover{background:var(--gold);color:#fff}
 </style>
 </head>
 <body>
@@ -148,13 +155,9 @@ footer b{color:#fff;font-family:"Playfair Display",Georgia,serif}
 </div></section>
 
 <section id="depoimentos" class="alt"><div class="w">
-<div class="head"><span class="eyebrow">Depoimentos</span><h2>Quem contrata, recomenda</h2><p>Trechos de avaliações reais deixadas no Google.</p></div>
-<div class="grid">
-<div class="card q"><div><div class="mark">“</div><blockquote>Um profissional competente, responsável e comprometido com suas atividades.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div>
-<div class="card q"><div><div class="mark">“</div><blockquote>Sempre resolve tudo com clareza e praticidade.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div>
-<div class="card q"><div><div class="mark">“</div><blockquote>Demonstra muito conhecimento técnico, organização e responsabilidade. Atendimento ágil, ético e de alta qualidade.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div>
-<div class="card q"><div><div class="mark">“</div><blockquote>Profissional de primeira linha, que trabalha com cuidado e respeito ao cliente.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div>
-</div>
+<div class="head"><span class="eyebrow">Depoimentos</span><h2>43 avaliações, todas 5 estrelas</h2><p>Trechos de avaliações reais deixadas no Google.</p></div>
+<div class="car"><div class="track" id="trk"><div class="card q"><div><div class="mark">“</div><blockquote>Gostaria de deixar registrado o meu sincero agradecimento pelo excelente trabalho do meu contador. Sua dedicação, organização e compromisso fazem toda a diferença no meu dia a dia. Sempre muito atencioso, prestativo e claro nas explicações, o que traz muita segurança e tranquilidade para cuidar das minhas finanças. Sem dúvida, um serviço de alta qualidade!</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Excelente profissional, demonstra muito conhecimento técnico, organização e responsabilidade em todos os serviços prestados. Sempre disponível para esclarecer dúvidas com clareza e transparência, trazendo segurança e confiança nas orientações. Atendimento ágil, ético e de alta qualidade, super recomendo.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Super indico o trabalho do contador Isac, pois é um profissional de 1ª linha, conhecedor de sua função, que faz seu trabalho com cuidado e respeito ao cliente.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Faz alguns anos que já venho sendo atendido por Isac. Excelente profissional! Recomendo.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Profissional maravilhoso, super atencioso, nos lembra de tudo. Recomendo demais.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Excelente profissional, trabalho rápido e de confiança. Resolveu todos os meus problemas com praticidade e clareza. Super recomendo.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Excelente profissional! Me deu toda a orientação que eu precisava para a minha situação e me ajudou a organizar tudo. Recomendo!</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Profissional competente, atencioso e sempre pronto para esclarecer qualquer dúvida com paciência e clareza. Indico com total tranquilidade e confiança.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Excelente profissional, dedicado, confiável e sempre prestativo. Recomendo muito o trabalho dele!</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Ótimo profissional, trabalho de confiança. Se eu precisar de qualquer serviço, sei que posso recorrer a ele.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Ágil e de confiança. Sempre resolve tudo com clareza e praticidade. Recomendo sem pensar duas vezes.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Atendimento diferenciado e confiável. Pode chamar que ele resolve suas pendências e tira qualquer dúvida.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Trabalho excelente! Profissional de muita confiança. Trabalho sério e com compromisso. Recomendo!</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Excelente o atendimento, ótimo profissional.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Contador de confiança, sabe o que faz.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div><div class="card q"><div><div class="mark">“</div><blockquote>Excelente trabalho, super confiável, recomendo plenamente.</blockquote></div><div><div class="st">★★★★★</div><small>Cliente · Google</small></div></div></div>
+<div class="ctrl"><button id="pv" aria-label="Anterior">←</button><button id="nx" aria-label="Próximo">→</button></div></div>
 </div></section>
 
 <section><div class="w">
@@ -184,5 +187,12 @@ footer b{color:#fff;font-family:"Playfair Display",Georgia,serif}
 
 <footer><div class="w"><div><b>Isac Gabriel · Contador</b><br>Escritório de contabilidade em Natal, RN</div><div>© 2026 Todos os direitos reservados.</div></div></footer>
 <a class="fab" href="https://wa.me/5584999705911" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14c-.2.6-1.300 1.200-1.800 1.200-.5.100-1 .200-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600c-.2.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg></a>
+<script>
+(function(){var t=document.getElementById('trk');if(!t)return;
+function step(){var c=t.querySelector('.q');return c?c.offsetWidth+20:300}
+document.getElementById('nx').onclick=function(){if(t.scrollLeft+t.clientWidth>=t.scrollWidth-4){t.scrollTo({left:0,behavior:'smooth'})}else{t.scrollBy({left:step(),behavior:'smooth'})}};
+document.getElementById('pv').onclick=function(){t.scrollBy({left:-step(),behavior:'smooth'})};
+})();
+</script>
 </body>
 </html>
